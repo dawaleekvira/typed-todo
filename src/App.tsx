@@ -50,6 +50,7 @@ function App() {
 
       <p>Total Tasks: {tasks.length}</p>
       <p>Completed: {tasks.filter((task) => task.completed).length}</p>
+      <p>Pending: {tasks.filter((task) => !task.completed).length}</p>
     </div>
   );
 }
